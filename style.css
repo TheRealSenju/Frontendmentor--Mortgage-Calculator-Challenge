@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  color-scheme: light;
+}
+
+body {
+  background-color: hsl(202, 86%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  width: fit-content;
+  border-radius: 25px;
+}
+
+.left-section {
+  padding: 30px;
+}
+
+.top-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.title {
+  color: hsl(202, 55%, 16%);
+  font-weight: 750;
+  display: inline-block;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(200, 24%, 40%);
+}
+
+a {
+  text-decoration: underline;
+}
+
+input {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(202, 55%, 16%);
+}
+
+.field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.symbol {
+  color: hsl(200, 24%, 40%);
+  margin: 8px 16px;
+  font-weight: 800;
+}
+
+#mortgage-amount {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  width: 100%;
+}
+
+.input-with-prefix {
+  display: flex;
+  background-color: hsl(202, 86%, 94%);
+  border: solid 2px hsl(200, 26%, 54%);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-with-suffix {
+  display: flex;
+  background-color: hsl(202, 86%, 94%);
+  border: solid 2px hsl(200, 26%, 54%);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-with-suffix > .symbol {
+  order: 1;
+}
+
+.input-with-suffix > input {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+}
+.input-row-2 {
+  display: flex;
+  gap: 15px;
+}
+
+fieldset div {
+  display: flex;
+  border: solid 2px hsl(200, 26%, 54%);
+  border-radius: 5px;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+fieldset label {
+  color: hsl(202, 55%, 16%);
+  font-weight: 750;
+}
+
+button {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+  background-color: hsl(61, 70%, 52%);
+  border: none;
+  padding: 13px 26px;
+  margin-top: 25px;
+  color: hsl(202, 55%, 16%);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+button img {
+  width: 22px;
+}
+
+.right-section {
+  display: flex;
+  background-color: hsl(202, 55%, 16%);
+  width: fit-content;
+  border-radius: 0 25px 25px 75px;
+  padding: 30px;
+}
+
+.right-section h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.right-section .paragraph {
+  color: hsl(200, 26%, 54%);
+}
+
+.empty-results {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  padding: 20px;
+}
+
+.empty-results img {
+  width: 150px;
+}
+
+.empty-results .paragraph {
+  text-align: center;
+}
+
+.completed-results {
+  width: 500px;
+  margin-top: 30px;
+}
+
+.completed-results h2 {
+  margin-bottom: 25px;
+}
+
+.completed-results > .paragraph {
+  margin-bottom: 30px;
+}
+
+.results-box {
+  background-color: hsl(202, 55%, 13%);
+  border-top: solid hsl(61, 70%, 52%) 4px;
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.results-box h1 {
+  font-size: 48px;
+  color: hsl(61, 70%, 52%);
+}
+
+.results-box > .paragraph {
+  margin-bottom: 15px;
+}
+
+hr {
+  margin: 25px 0;
+  opacity: 20%;
+}
+
+.total-payment {
+  color: hsl(0, 0%, 100%);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="radio"] {
+  accent-color: hsl(61, 70%, 52%);
+}
+
+/* hover and focus effects */
+
+.input-field:hover {
+  border: solid black 2px;
+  cursor: pointer;
+}
+
+fieldset div:hover {
+  border: solid hsl(61, 70%, 83%) 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(61, 70%, 83%);
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-field:focus-within {
+  border: solid hsl(61, 70%, 52%) 2px;
+  background-color: hsl(61, 70%, 52%);
+}
+
+.input-field:focus-within p {
+  color: hsl(202, 55%, 16%);
+}
+
+fieldset div:focus-within {
+  border: solid hsl(61, 70%, 52%) 2px;
+  background-color: hsl(62, 100%, 95%);
+}
+
+p.error {
+  font-size: 12px;
+  margin: 5px 5px 5px 0;
+  color: hsl(0, 100%, 50%);
+}
+
+div.error {
+  border: solid hsl(0, 100%, 50%) 2px;
+  background-color: hsl(0, 100%, 50%);
+}
+
+div.error p {
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .top-items {
+    gap: 30px;
+  }
+
+  .empty-results,
+  .completed-results {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .top-items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .right-section {
+    border-radius: 0px;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}
